@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MovieCell" id="AJy-Kq-u5k" customClass="MovieCell" customModule="RappiChallenge" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="70" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="70" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="je7-5f-Enh">
+                        <rect key="frame" x="0.0" y="0.0" width="70" height="120"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="je7-5f-Enh" firstAttribute="leading" secondItem="AJy-Kq-u5k" secondAttribute="leading" id="GpX-ub-GHy"/>
+                <constraint firstItem="je7-5f-Enh" firstAttribute="top" secondItem="AJy-Kq-u5k" secondAttribute="top" id="gKu-O9-Z47"/>
+                <constraint firstAttribute="trailing" secondItem="je7-5f-Enh" secondAttribute="trailing" id="mth-r2-YPa"/>
+                <constraint firstAttribute="bottom" secondItem="je7-5f-Enh" secondAttribute="bottom" id="ts1-0w-6r1"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SfQ-JO-9NN"/>
+            <connections>
+                <outlet property="movieImage" destination="je7-5f-Enh" id="Etr-aC-0ge"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="153.82308845577214"/>
+        </collectionViewCell>
+    </objects>
+</document>

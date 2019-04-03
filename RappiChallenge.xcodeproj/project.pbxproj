@@ -1,0 +1,816 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1842B1EA2252694B00690779 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1842B1E92252694B00690779 /* AppDelegate.swift */; };
+		1842B1EC2252694B00690779 /* MovieSeriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1842B1EB2252694B00690779 /* MovieSeriesViewController.swift */; };
+		1842B1EE2252694B00690779 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1842B1ED2252694B00690779 /* DetailViewController.swift */; };
+		1842B1F12252694B00690779 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1842B1EF2252694B00690779 /* Main.storyboard */; };
+		1842B1F32252694C00690779 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1842B1F22252694C00690779 /* Assets.xcassets */; };
+		1842B1F62252694C00690779 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1842B1F42252694C00690779 /* LaunchScreen.storyboard */; };
+		1842B2012252694C00690779 /* RappiChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1842B2002252694C00690779 /* RappiChallengeTests.swift */; };
+		1842B20C2252694D00690779 /* RappiChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1842B20B2252694D00690779 /* RappiChallengeUITests.swift */; };
+		1842B21A22526C4C00690779 /* MovieSeries.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1842B21922526C4C00690779 /* MovieSeries.storyboard */; };
+		1842B21C2252715400690779 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1842B21B2252715400690779 /* TabBarViewController.swift */; };
+		1842B21F2252A75C00690779 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1842B21E2252A75C00690779 /* Movie.swift */; };
+		1842B2222252B0AE00690779 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1842B2212252B0AE00690779 /* MovieCell.swift */; };
+		1842B2242252B10A00690779 /* MovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1842B2232252B10A00690779 /* MovieCell.xib */; };
+		1842B2272252B48E00690779 /* MoviesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1842B2262252B48E00690779 /* MoviesService.swift */; };
+		1842B2292252BAEE00690779 /* MovieResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1842B2282252BAEE00690779 /* MovieResponse.swift */; };
+		1842B22D2252BDD200690779 /* Date+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1842B22C2252BDD200690779 /* Date+Formatter.swift */; };
+		1842B22F225301FB00690779 /* TMDbApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1842B22E225301FB00690779 /* TMDbApiService.swift */; };
+		1842B2312253123800690779 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1842B2302253123800690779 /* DataManager.swift */; };
+		4C15FA187161BFD4A7DF6BAE /* Pods_RappiChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F101B7D405298F0F101BA1FA /* Pods_RappiChallengeUITests.framework */; };
+		64CC7D3C2C21A83F7958F3D9 /* Pods_RappiChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04500CA88AA574982420003 /* Pods_RappiChallenge.framework */; };
+		946DE47E0DF49C1989B7336F /* Pods_RappiChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC2C94CE0EB9BB524C085104 /* Pods_RappiChallengeTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1842B1FD2252694C00690779 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1842B1DE2252694A00690779 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1842B1E52252694B00690779;
+			remoteInfo = RappiChallenge;
+		};
+		1842B2082252694D00690779 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1842B1DE2252694A00690779 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1842B1E52252694B00690779;
+			remoteInfo = RappiChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1842B1E62252694B00690779 /* RappiChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RappiChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1842B1E92252694B00690779 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1842B1EB2252694B00690779 /* MovieSeriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSeriesViewController.swift; sourceTree = "<group>"; };
+		1842B1ED2252694B00690779 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		1842B1F02252694B00690779 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1842B1F22252694C00690779 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1842B1F52252694C00690779 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1842B1F72252694C00690779 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1842B1FC2252694C00690779 /* RappiChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RappiChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1842B2002252694C00690779 /* RappiChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RappiChallengeTests.swift; sourceTree = "<group>"; };
+		1842B2022252694C00690779 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1842B2072252694C00690779 /* RappiChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RappiChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1842B20B2252694D00690779 /* RappiChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RappiChallengeUITests.swift; sourceTree = "<group>"; };
+		1842B20D2252694D00690779 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1842B21922526C4C00690779 /* MovieSeries.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MovieSeries.storyboard; sourceTree = "<group>"; };
+		1842B21B2252715400690779 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		1842B21E2252A75C00690779 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		1842B2212252B0AE00690779 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		1842B2232252B10A00690779 /* MovieCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCell.xib; sourceTree = "<group>"; };
+		1842B2262252B48E00690779 /* MoviesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesService.swift; sourceTree = "<group>"; };
+		1842B2282252BAEE00690779 /* MovieResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieResponse.swift; sourceTree = "<group>"; };
+		1842B22C2252BDD200690779 /* Date+Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Formatter.swift"; sourceTree = "<group>"; };
+		1842B22E225301FB00690779 /* TMDbApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDbApiService.swift; sourceTree = "<group>"; };
+		1842B2302253123800690779 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		39F14366DFAA66694279EBCD /* Pods-RappiChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RappiChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RappiChallengeTests/Pods-RappiChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		8615AB600A5DEF661DC4BE0B /* Pods-RappiChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RappiChallengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RappiChallengeTests/Pods-RappiChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		89EAF288DC39E30750D8734A /* Pods-RappiChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RappiChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RappiChallenge/Pods-RappiChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		A0268D4EFA360B421AA1A660 /* Pods-RappiChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RappiChallengeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RappiChallengeUITests/Pods-RappiChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A04500CA88AA574982420003 /* Pods_RappiChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RappiChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5CAA67FA20BE199F8B3EDC5 /* Pods-RappiChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RappiChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-RappiChallenge/Pods-RappiChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		F101B7D405298F0F101BA1FA /* Pods_RappiChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RappiChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F49D674BEBAE7901EC66C8AD /* Pods-RappiChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RappiChallengeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RappiChallengeUITests/Pods-RappiChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FC2C94CE0EB9BB524C085104 /* Pods_RappiChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RappiChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1842B1E32252694B00690779 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64CC7D3C2C21A83F7958F3D9 /* Pods_RappiChallenge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1842B1F92252694C00690779 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				946DE47E0DF49C1989B7336F /* Pods_RappiChallengeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1842B2042252694C00690779 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C15FA187161BFD4A7DF6BAE /* Pods_RappiChallengeUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09565F6F118495A88273B37B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A04500CA88AA574982420003 /* Pods_RappiChallenge.framework */,
+				FC2C94CE0EB9BB524C085104 /* Pods_RappiChallengeTests.framework */,
+				F101B7D405298F0F101BA1FA /* Pods_RappiChallengeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1842B1DD2252694A00690779 = {
+			isa = PBXGroup;
+			children = (
+				1842B1E82252694B00690779 /* RappiChallenge */,
+				1842B1FF2252694C00690779 /* RappiChallengeTests */,
+				1842B20A2252694D00690779 /* RappiChallengeUITests */,
+				1842B1E72252694B00690779 /* Products */,
+				BEE97882DE9F0568B4E26795 /* Pods */,
+				09565F6F118495A88273B37B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1842B1E72252694B00690779 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1842B1E62252694B00690779 /* RappiChallenge.app */,
+				1842B1FC2252694C00690779 /* RappiChallengeTests.xctest */,
+				1842B2072252694C00690779 /* RappiChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1842B1E82252694B00690779 /* RappiChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				1842B23322551CAB00690779 /* DataManager */,
+				1842B2322254CADB00690779 /* ViewController */,
+				1842B2252252B44F00690779 /* Networking */,
+				1842B2202252B09E00690779 /* Cells */,
+				1842B21D2252A74F00690779 /* Model */,
+				1842B1E92252694B00690779 /* AppDelegate.swift */,
+				1842B1EF2252694B00690779 /* Main.storyboard */,
+				1842B1F22252694C00690779 /* Assets.xcassets */,
+				1842B1F42252694C00690779 /* LaunchScreen.storyboard */,
+				1842B1F72252694C00690779 /* Info.plist */,
+				1842B22C2252BDD200690779 /* Date+Formatter.swift */,
+			);
+			path = RappiChallenge;
+			sourceTree = "<group>";
+		};
+		1842B1FF2252694C00690779 /* RappiChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				1842B2002252694C00690779 /* RappiChallengeTests.swift */,
+				1842B2022252694C00690779 /* Info.plist */,
+			);
+			path = RappiChallengeTests;
+			sourceTree = "<group>";
+		};
+		1842B20A2252694D00690779 /* RappiChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1842B20B2252694D00690779 /* RappiChallengeUITests.swift */,
+				1842B20D2252694D00690779 /* Info.plist */,
+			);
+			path = RappiChallengeUITests;
+			sourceTree = "<group>";
+		};
+		1842B21D2252A74F00690779 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1842B21E2252A75C00690779 /* Movie.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1842B2202252B09E00690779 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1842B2212252B0AE00690779 /* MovieCell.swift */,
+				1842B2232252B10A00690779 /* MovieCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		1842B2252252B44F00690779 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				1842B2262252B48E00690779 /* MoviesService.swift */,
+				1842B2282252BAEE00690779 /* MovieResponse.swift */,
+				1842B22E225301FB00690779 /* TMDbApiService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		1842B2322254CADB00690779 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1842B21B2252715400690779 /* TabBarViewController.swift */,
+				1842B1EB2252694B00690779 /* MovieSeriesViewController.swift */,
+				1842B1ED2252694B00690779 /* DetailViewController.swift */,
+				1842B21922526C4C00690779 /* MovieSeries.storyboard */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		1842B23322551CAB00690779 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				1842B2302253123800690779 /* DataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		BEE97882DE9F0568B4E26795 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				89EAF288DC39E30750D8734A /* Pods-RappiChallenge.debug.xcconfig */,
+				C5CAA67FA20BE199F8B3EDC5 /* Pods-RappiChallenge.release.xcconfig */,
+				8615AB600A5DEF661DC4BE0B /* Pods-RappiChallengeTests.debug.xcconfig */,
+				39F14366DFAA66694279EBCD /* Pods-RappiChallengeTests.release.xcconfig */,
+				F49D674BEBAE7901EC66C8AD /* Pods-RappiChallengeUITests.debug.xcconfig */,
+				A0268D4EFA360B421AA1A660 /* Pods-RappiChallengeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1842B1E52252694B00690779 /* RappiChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1842B2102252694D00690779 /* Build configuration list for PBXNativeTarget "RappiChallenge" */;
+			buildPhases = (
+				CE1DC43FE653AC949E6CA2E8 /* [CP] Check Pods Manifest.lock */,
+				1842B1E22252694B00690779 /* Sources */,
+				1842B1E32252694B00690779 /* Frameworks */,
+				1842B1E42252694B00690779 /* Resources */,
+				99D77D446B3D65F79AC9595D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RappiChallenge;
+			productName = RappiChallenge;
+			productReference = 1842B1E62252694B00690779 /* RappiChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1842B1FB2252694C00690779 /* RappiChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1842B2132252694D00690779 /* Build configuration list for PBXNativeTarget "RappiChallengeTests" */;
+			buildPhases = (
+				E529A34FFD1C1257CA675FA7 /* [CP] Check Pods Manifest.lock */,
+				1842B1F82252694C00690779 /* Sources */,
+				1842B1F92252694C00690779 /* Frameworks */,
+				1842B1FA2252694C00690779 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1842B1FE2252694C00690779 /* PBXTargetDependency */,
+			);
+			name = RappiChallengeTests;
+			productName = RappiChallengeTests;
+			productReference = 1842B1FC2252694C00690779 /* RappiChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1842B2062252694C00690779 /* RappiChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1842B2162252694D00690779 /* Build configuration list for PBXNativeTarget "RappiChallengeUITests" */;
+			buildPhases = (
+				F705CCD086573C9A9D3288E3 /* [CP] Check Pods Manifest.lock */,
+				1842B2032252694C00690779 /* Sources */,
+				1842B2042252694C00690779 /* Frameworks */,
+				1842B2052252694C00690779 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1842B2092252694D00690779 /* PBXTargetDependency */,
+			);
+			name = RappiChallengeUITests;
+			productName = RappiChallengeUITests;
+			productReference = 1842B2072252694C00690779 /* RappiChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1842B1DE2252694A00690779 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Guillermo Vergara";
+				TargetAttributes = {
+					1842B1E52252694B00690779 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					1842B1FB2252694C00690779 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 1842B1E52252694B00690779;
+					};
+					1842B2062252694C00690779 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 1842B1E52252694B00690779;
+					};
+				};
+			};
+			buildConfigurationList = 1842B1E12252694B00690779 /* Build configuration list for PBXProject "RappiChallenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1842B1DD2252694A00690779;
+			productRefGroup = 1842B1E72252694B00690779 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1842B1E52252694B00690779 /* RappiChallenge */,
+				1842B1FB2252694C00690779 /* RappiChallengeTests */,
+				1842B2062252694C00690779 /* RappiChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1842B1E42252694B00690779 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1842B21A22526C4C00690779 /* MovieSeries.storyboard in Resources */,
+				1842B1F62252694C00690779 /* LaunchScreen.storyboard in Resources */,
+				1842B1F32252694C00690779 /* Assets.xcassets in Resources */,
+				1842B1F12252694B00690779 /* Main.storyboard in Resources */,
+				1842B2242252B10A00690779 /* MovieCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1842B1FA2252694C00690779 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1842B2052252694C00690779 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		99D77D446B3D65F79AC9595D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RappiChallenge/Pods-RappiChallenge-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RappiChallenge/Pods-RappiChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE1DC43FE653AC949E6CA2E8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RappiChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E529A34FFD1C1257CA675FA7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RappiChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F705CCD086573C9A9D3288E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RappiChallengeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1842B1E22252694B00690779 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1842B21C2252715400690779 /* TabBarViewController.swift in Sources */,
+				1842B22F225301FB00690779 /* TMDbApiService.swift in Sources */,
+				1842B1EE2252694B00690779 /* DetailViewController.swift in Sources */,
+				1842B2222252B0AE00690779 /* MovieCell.swift in Sources */,
+				1842B1EA2252694B00690779 /* AppDelegate.swift in Sources */,
+				1842B2272252B48E00690779 /* MoviesService.swift in Sources */,
+				1842B2292252BAEE00690779 /* MovieResponse.swift in Sources */,
+				1842B1EC2252694B00690779 /* MovieSeriesViewController.swift in Sources */,
+				1842B2312253123800690779 /* DataManager.swift in Sources */,
+				1842B22D2252BDD200690779 /* Date+Formatter.swift in Sources */,
+				1842B21F2252A75C00690779 /* Movie.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1842B1F82252694C00690779 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1842B2012252694C00690779 /* RappiChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1842B2032252694C00690779 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1842B20C2252694D00690779 /* RappiChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1842B1FE2252694C00690779 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1842B1E52252694B00690779 /* RappiChallenge */;
+			targetProxy = 1842B1FD2252694C00690779 /* PBXContainerItemProxy */;
+		};
+		1842B2092252694D00690779 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1842B1E52252694B00690779 /* RappiChallenge */;
+			targetProxy = 1842B2082252694D00690779 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1842B1EF2252694B00690779 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1842B1F02252694B00690779 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1842B1F42252694C00690779 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1842B1F52252694C00690779 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1842B20E2252694D00690779 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1842B20F2252694D00690779 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1842B2112252694D00690779 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89EAF288DC39E30750D8734A /* Pods-RappiChallenge.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RappiChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.guille.RappiChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1842B2122252694D00690779 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5CAA67FA20BE199F8B3EDC5 /* Pods-RappiChallenge.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RappiChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.guille.RappiChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1842B2142252694D00690779 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8615AB600A5DEF661DC4BE0B /* Pods-RappiChallengeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RappiChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.guille.RappiChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RappiChallenge.app/RappiChallenge";
+			};
+			name = Debug;
+		};
+		1842B2152252694D00690779 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39F14366DFAA66694279EBCD /* Pods-RappiChallengeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RappiChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.guille.RappiChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RappiChallenge.app/RappiChallenge";
+			};
+			name = Release;
+		};
+		1842B2172252694D00690779 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F49D674BEBAE7901EC66C8AD /* Pods-RappiChallengeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RappiChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.guille.RappiChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RappiChallenge;
+			};
+			name = Debug;
+		};
+		1842B2182252694D00690779 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0268D4EFA360B421AA1A660 /* Pods-RappiChallengeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RappiChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.guille.RappiChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RappiChallenge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1842B1E12252694B00690779 /* Build configuration list for PBXProject "RappiChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1842B20E2252694D00690779 /* Debug */,
+				1842B20F2252694D00690779 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1842B2102252694D00690779 /* Build configuration list for PBXNativeTarget "RappiChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1842B2112252694D00690779 /* Debug */,
+				1842B2122252694D00690779 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1842B2132252694D00690779 /* Build configuration list for PBXNativeTarget "RappiChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1842B2142252694D00690779 /* Debug */,
+				1842B2152252694D00690779 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1842B2162252694D00690779 /* Build configuration list for PBXNativeTarget "RappiChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1842B2172252694D00690779 /* Debug */,
+				1842B2182252694D00690779 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1842B1DE2252694A00690779 /* Project object */;
+}
